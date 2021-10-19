@@ -39,10 +39,16 @@ h1 {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Right justify log in */
 .right {
-    float: right;
+  float: right;
+}
+
+/*Content sizing */
+.content {
+  margin: 20px;
+  margin-bottom: 60px;
 }
