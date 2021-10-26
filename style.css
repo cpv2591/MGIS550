@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     text-align: center;
     color: #333;
@@ -43,7 +48,12 @@ h1 {
 }
 
 /* Right justify log in */
-.right {
+.login {
+  float: right;
+}
+
+/*Right justify my account*/
+.myaccount {
   float: right;
 }
 
@@ -52,3 +62,4 @@ h1 {
   margin: 20px;
   margin-bottom: 60px;
 }
+
