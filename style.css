@@ -20,6 +20,11 @@ h1 {
     text-align: center;
  }
 
+.footer-links {
+	padding: 0 10px 0 10px; 
+  color: white;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #D9FDFF;
