@@ -63,7 +63,6 @@
         display: table;
         clear: both;
         }
-    
     </style>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -80,13 +79,19 @@
         <img src="logo.png" width="300" height="95">
         <!--Navigation Bar-->
         <div class="topnav">
-            <a class="active" href="homepage.html">Home</a>
-            <a href="cc.html">Cryptocurrency</a>
-            <a href="stocks.html">Stocks</a>
+            <a href="personalhome.html">My Home</a>
+            <a href="personalcc.html">My Cryptocurrency</a>
+            <a href="personalstocks.html">My Stocks</a>
             <a href="about.html">About</a>
             <div class="login">
-                <a href="Register.html">Register</a>
-                <a href="login.html">Log In</a>
+                <img src="icon.png" width=50 height=50 onclick="myFunction()"></img>
+                <script>
+                    function myFunction() {
+                      alert("Hello User, Your TTM Stock has moved over 5 dollars, check out your account to make sure this was you.");
+                    }
+                </script>
+                <a href="myaccount.html">My Account</a>
+                <a href="logout.html">Log Out</a>
             </div>
         </div>
         <!--Content-->

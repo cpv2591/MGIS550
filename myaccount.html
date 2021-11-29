@@ -8,23 +8,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Righteous&display=swap" rel="stylesheet">
-    <title>Register</title>
+    <title>My Account</title>
 </head>
 <body>
     <img src="logo.png" width="300" height="95">
     <!--Navigation Bar-->
     <div class="topnav">
-        <a href="homepage.html">Home</a>
-        <a href="cc.html">Cryptocurrency</a>
-        <a href="stocks.html">Stocks</a>
+        <a href="personalhome.html">My Home</a>
+        <a href="personalcc.html">My Cryptocurrency</a>
+        <a href="personalstocks.html">My Stocks</a>
         <a href="about.html">About</a>
-        <div class="myaccount">
+        <div class="login">
+            <img src="icon.png" width=50 height=50 onclick="myFunction()"></img>
+                <script>
+                    function myFunction() {
+                      alert("Hello User, Your TTM Stock has moved over 5 dollars, check out your account to make sure this was you.");
+                    }
+                </script>
             <a class="active" href="myaccount.html">My Account</a>
             <a href="logout.html">Log Out</a>
         </div>
     </div>
     <!--Content-->
     <div class="content">
+        <img src="track.png" style="float: right; margin-top: 50px;" height=400 width=700>
+        <h2>My Account Information</h2>
+            <label for="uname">Name: </label>
+                <input type="text" id="uname" name="uname"><br>
+            <label for="pw">Email: </label>
+                <input type="text" id="pw" name="pw"><br>
+            <label for="phone">Phone Number: </label>
+                <input type="text" id="phone" name="phone"><br>
+            <label for="unam">Username: </label>
+                <input type="text" id="unam" name="unam"><br>
+        <h2>Bank Information</h2>
+            <label for="bank">Bank Name: </label>
+                <input type="text" id="bank" name="bank"><br>
+            <label for="bankn">Bank Number: </label>
+                <input type="text" id="bankn" name="bankn"><br>
+        <label for="submit"></label>
+        <a href = "personalhome.html"><input type="submit" value="Edit Information"><br></a>
     </div>
     <!--Footer-->
     <div class="footer">
