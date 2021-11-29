@@ -5,7 +5,6 @@
     .homeimg {
         width: 100%; 
         height: 500px;
-        margin: 0px;
     /*    padding: 0;*/
     }
 
@@ -13,33 +12,58 @@
     .left25 {
         width: 25%;
         float: left;
+        margin-top: 50px;
     }
     
     .left50 {
+        background-color: black;
+        border-radius: 15%;
+        border-color: aqua;
+        color: white;
+        text-align: center;
         width: 50%;
-        float: left;
+        float: right;
+        padding-bottom: 5%;
     }
     
     .left75 {
         width: 75%;
         float: left;
     }
-
-    /*make info float right*/
-    .right25 {
-        width: 25%;
-        float: right;
-    } 
     
     .right50 {
+        background-color: black;
+        border-radius: 15%;
+        color: white;
+        text-align: center;
         width: 50%;
         float: right;
+        padding-bottom: 5%;
     }
 
     .right75 {
         width: 75%;
         float: right;
+        padding-left: 300px;
     }
+
+    * {
+    box-sizing: border-box;
+    }
+
+    .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
 </style>
 <head>
     <link rel="stylesheet" href="style.css">
@@ -70,49 +94,73 @@
     <img class="homeimg" src="image.jpg">
      <div class="content">
          <div class="left75">
-             <h2>What We Have to Offer</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-         </div>
-         <div class="right25">
-             <p>insert image here</p>
-         </div>
+            <h2>What We Have to Offer</h2>
+             <p>We are so excited to have you join our family! Comtrack is a a great way to start your investments and we are known for 
+                 our long lasting partnership and exceptional service. Still in thinking about if this company is the right company for you?
+                 No need to worry, We have just the right plans for you. 
+             </p>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+              <h3>The Starter Package</h3>
+              <ul>
+                <li>Self Guided for managing your own investments.</li>  
+                <li>Access to each stock and cryptocurrency company background & information.</li>
+                <li>Access to guided investing by meeting with our staff.</li>
+              </ul>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+              <h3>The Ultimate Package</h3>
+              <ul>
+                <li>Everything included in the Starter Package.</li>  
+                <li>Early access to purchasing stocks and cryptocurrency investments.</li>
+                <li>Able to share and contact other investors for tips and advice.</li>
+              </ul>
+            </div>
+          </div> 
          <div class="right75">
             <h2>How to Start with Comtrack</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <ol>
+                <li>Create/ Register For an Account</li>
+                <li>Start Investing</li>
+            </ol>
+            <p>It's as easy at that! Once you have an account with Comtrack, the ease of investing comes with research and guided navigation throughout the webstie. 
+                We will provide you with access to tutorial videos as well as pop up notification and email notification to keep up with your investments.
+            </p>
+
          </div>
          <div class="left25">
-             <p>insert image here</p>
+            <img src="teamwork.jpg" width=625 height=910></img>
          </div>
          <div class="left50">
-             <center><h2>Top 10 Cryptocurrencies</h2></center>
+             <h2>Top 10 Cryptocurrencies</h2>
              <ol>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
+                 <li>Bitcoin</li>
+                 <li>Ethereum</li>
+                 <li>Binance Coin</li>
+                 <li>Tether</li>
+                 <li>Cardano</li>
+                 <li>Solana</li>
+                 <li>XRP</li>
+                 <li>Polkadot</li>
+                 <li>Shiba Inu</li>
+                 <li>Dogecoin</li>
              </ol> 
          </div>
          <div class="right50">
-             <center><h2>Top 10 Stocks</h2></center>
+             <h2>Top 10 Stocks</h2>
              <ol>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
-                 <li> </li>
+                 <li>Amazon</li>
+                 <li>Microsoft Corporation</li>
+                 <li>Apple</li>
+                 <li>Johnson & Johnson</li>
+                 <li>Bank of America</li>
+                 <li>NVIDIA</li>
+                 <li>Walmart</li>
+                 <li>Tesla</li>
+                 <li>NextEra Engery, Inc.</li>
+                 <li>Chevron Corporation</li>
              </ol>
-             <br><br>
          </div>
      </div>
     <!--Footer-->

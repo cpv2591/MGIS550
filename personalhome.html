@@ -1,77 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    /*Image formatting on homepage*/
-    .homeimg {
-        width: 100%; 
-        height: 500px;
-        margin: 0px;
-    /*    padding: 0;*/
-    }
-
-    /*make info float left*/
-    .left25 {
-        width: 25%;
-        float: left;
-    }
+    <style>
+        /*Image formatting on homepage*/
+        .homeimg {
+            width: 100%; 
+            height: 500px;
+        /*    padding: 0;*/
+        }
     
-    .left50 {
+        /*make info float left*/
+        .left25 {
+            width: 25%;
+            float: left;
+            margin-top: 50px;
+        }
+        
+        .left50 {
+            background-color: black;
+            border-radius: 15%;
+            border-color: aqua;
+            color: white;
+            text-align: center;
+            width: 50%;
+            float: right;
+            padding-bottom: 5%;
+        }
+        
+        .left75 {
+            width: 75%;
+            float: left;
+        }
+        
+        .right50 {
+            background-color: black;
+            border-radius: 15%;
+            color: white;
+            text-align: center;
+            width: 50%;
+            float: right;
+            padding-bottom: 5%;
+        }
+    
+        .right75 {
+            width: 75%;
+            float: right;
+            padding-left: 300px;
+        }
+    
+        * {
+        box-sizing: border-box;
+        }
+    
+        .column {
+        float: left;
         width: 50%;
-        float: left;
-    }
+        padding: 10px;
+        height: 300px;
+        }
     
-    .left75 {
-        width: 75%;
-        float: left;
-    }
-
-    /*make info float right*/
-    .right25 {
-        width: 25%;
-        float: right;
-    } 
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
     
-    .right50 {
-        width: 50%;
-        float: right;
-    }
-
-    .right75 {
-        width: 75%;
-        float: right;
-    }
-</style>
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Righteous&display=swap" rel="stylesheet">
-    <title>Homepage</title>
-</head>
-    
-<body>
-    <img src="logo.png" width="300" height="95">
-    <!--Navigation Bar-->
-    <div class="topnav">
-        <a class="active" href="personalhome.html">My Home</a>
-        <a href="personalcc.html">My Cryptocurrency</a>
-        <a href="personalstocks.html">My Stocks</a>
-        <a href="about.html">About</a>
-        <div class="login">
-            <a href="myaccount.html">My Account</a>
-            <a href="logout.html">Log Out</a>
+    </style>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Righteous&display=swap" rel="stylesheet">
+        <title>Homepage</title>
+    </head>
+        
+    <body>
+        <img src="logo.png" width="300" height="95">
+        <!--Navigation Bar-->
+        <div class="topnav">
+            <a class="active" href="homepage.html">Home</a>
+            <a href="cc.html">Cryptocurrency</a>
+            <a href="stocks.html">Stocks</a>
+            <a href="about.html">About</a>
+            <div class="login">
+                <a href="Register.html">Register</a>
+                <a href="login.html">Log In</a>
+            </div>
         </div>
-    </div>
-    <!--Content-->
-    <h1>Welcome to Comtrack</h1>
-    <img class="homeimg" src="image.jpg">
-    <!--Footer-->
-    <div class="footer">
-        <a class = "footer-links" href="policy.html" class="footer">Policy</a>
-        <a class = "footer-links" href="contact.html" class="footer">Contact</a>
-    </div>
-</body>
-</html>
+        <!--Content-->
+        <h1>Welcome to Comtrack</h1>
+        <img class="homeimg" src="image.jpg">
+         <div class="content">
+             <div class="left75">
+                <h2>What We Have to Offer</h2>
+                 <p>We are so excited to have you join our family! Comtrack is a a great way to start your investments and we are known for 
+                     our long lasting partnership and exceptional service. Still in thinking about if this company is the right company for you?
+                     No need to worry, We have just the right plans for you. 
+                 </p>
+            </div>
+            <div class="row">
+                <div class="column" style="background-color:#aaa;">
+                  <h3>The Starter Package</h3>
+                  <ul>
+                    <li>Self Guided for managing your own investments.</li>  
+                    <li>Access to each stock and cryptocurrency company background & information.</li>
+                    <li>Access to guided investing by meeting with our staff.</li>
+                  </ul>
+                </div>
+                <div class="column" style="background-color:#bbb;">
+                  <h3>The Ultimate Package</h3>
+                  <ul>
+                    <li>Everything included in the Starter Package.</li>  
+                    <li>Early access to purchasing stocks and cryptocurrency investments.</li>
+                    <li>Able to share and contact other investors for tips and advice.</li>
+                  </ul>
+                </div>
+              </div> 
+             <div class="right75">
+                <h2>How to Start with Comtrack</h2>
+                <ol>
+                    <li>Create/ Register For an Account</li>
+                    <li>Start Investing</li>
+                </ol>
+                <p>It's as easy at that! Once you have an account with Comtrack, the ease of investing comes with research and guided navigation throughout the webstie. 
+                    We will provide you with access to tutorial videos as well as pop up notification and email notification to keep up with your investments.
+                </p>
+    
+             </div>
+             <div class="left25">
+                <img src="teamwork.jpg" width=625 height=910></img>
+             </div>
+             <div class="left50">
+                 <h2>Top 10 Cryptocurrencies</h2>
+                 <ol>
+                     <li>Bitcoin</li>
+                     <li>Ethereum</li>
+                     <li>Binance Coin</li>
+                     <li>Tether</li>
+                     <li>Cardano</li>
+                     <li>Solana</li>
+                     <li>XRP</li>
+                     <li>Polkadot</li>
+                     <li>Shiba Inu</li>
+                     <li>Dogecoin</li>
+                 </ol> 
+             </div>
+             <div class="right50">
+                 <h2>Top 10 Stocks</h2>
+                 <ol>
+                     <li>Amazon</li>
+                     <li>Microsoft Corporation</li>
+                     <li>Apple</li>
+                     <li>Johnson & Johnson</li>
+                     <li>Bank of America</li>
+                     <li>NVIDIA</li>
+                     <li>Walmart</li>
+                     <li>Tesla</li>
+                     <li>NextEra Engery, Inc.</li>
+                     <li>Chevron Corporation</li>
+                 </ol>
+             </div>
+         </div>
+        <!--Footer-->
+        <div class="footer">
+            <a class = "footer-links" href="policy.html" class="footer">Policy</a>
+            <a class = "footer-links" href="contact.html" class="footer">Contact</a>
+        </div>
+    </body>
+    </html>
+    
